@@ -1,9 +1,8 @@
 FROM python:3.11-alpine
 
-LABEL maintainer="no-socola"
 LABEL author="winky"
-WORKDIR /app
 
+WORKDIR /app
 
 COPY requirements.txt .
 
