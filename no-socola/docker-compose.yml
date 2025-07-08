@@ -1,0 +1,23 @@
+services:
+  no_socola:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - SECRET_KEY=ctf_secret_key_2025_viblo_challenge
+      - FLAG=Flag{real_flag_for_challenge_hehe}
+      - ADMIN_PASSWORD=hihi_huhu_haha
+      - MONGO_HOST=db
+    networks:
+      - no_socola_network
+    depends_on:
+      - db
+      
+  db:
+    image: mongo
+    networks:
+      - no_socola_network
+
+networks:
+  no_socola_network:
+    driver: bridge
