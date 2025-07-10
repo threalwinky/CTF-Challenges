@@ -3,7 +3,7 @@ services:
   evalgelist:
     build: ../
     environment:
-      FLAG: "R3CTF{g00d_j0b_my_fr13nd}"
+      FLAG: "Flag{0h_my_g0d_1t5_4_fl4g}"
     ports:
       - 8080:80
     restart: unless-stopped
