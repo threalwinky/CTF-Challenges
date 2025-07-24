@@ -1,0 +1,1 @@
+FLAG{fake_flag_for_testing_ctf_made_by_winky_hehe_32010293}
