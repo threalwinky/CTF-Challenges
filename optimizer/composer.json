@@ -1,0 +1,7 @@
+{
+    "require": {
+        "spatie/image-optimizer": "1.7.2",
+        "monolog/monolog": "^2.10",
+        "symfony/filesystem": "^5.4"
+    }
+}
