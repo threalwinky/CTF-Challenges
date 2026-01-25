@@ -1,0 +1,7 @@
+services:
+  php-fpm:
+    build: ./php-fpm
+  proxy:
+    build: ./proxy
+    ports:
+      - 5000:80

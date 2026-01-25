@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>0xNote - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
+      --primary: #000000;
+      --primary-dark: #1a1a1a;
+      --bg: #000000;
+      --card: #ffffff;
+      --text: #000000;
+      --text-light: #666666;
+      --border: #e0e0e0;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      --accent: #333333;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .login-container {
+      background: var(--card);
+      padding: 3rem 2.5rem;
+      border-radius: 0;
+      border: 3px solid var(--primary);
+      box-shadow: var(--shadow);
+      width: 100%;
+      max-width: 440px;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid var(--primary);
+    }
+
+    .logo h1 {
+      font-size: 2.5rem;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      letter-spacing: -2px;
+    }
+
+    .logo p {
+      color: var(--text-light);
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.85rem;
+    }
+
+    .welcome-text {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .welcome-text h2 {
+      color: var(--text);
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .welcome-text p {
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+
+    label {
+      font-size: 0.95rem;
+      color: var(--text);
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border: 2px solid var(--primary);
+      border-radius: 0;
+      font-size: 1rem;
+      font-family: monospace;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s;
+      background: var(--card);
+    }
+
+    input[type="text"]:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: inset 0 0 0 1px var(--primary);
+    }
+
+    button {
+      width: 100%;
+      padding: 1rem;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 0;
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    button:hover {
+      background: var(--accent);
+    }
+
+    .info-text {
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+      text-align: center;
+      color: var(--text-light);
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo">
+      <h1>0xNote</h1>
+    </div>
+
+    <div class="welcome-text">
+      <h2>Login</h2>
+      <p>Enter your credentials to continue</p>
+    </div>
+
+    <form method="POST" action="login.php">
+      <label for="username">Username</label>
+      <input id="username" type="text" name="username" placeholder="Enter username..." required autofocus>
+
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+</body>
+</html>
