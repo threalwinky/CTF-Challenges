@@ -1,0 +1,19 @@
+{
+  "name": "hepihepi",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "winky",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "dset": "3.1.3",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "uuid": "^13.0.0"
+  }
+}

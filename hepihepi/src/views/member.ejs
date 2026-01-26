@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= member.name %> - HepiHepi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="themeBtn" aria-label="Toggle theme">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </button>
+    </div>
+
+    <header class="member-header">
+        <div class="container">
+            <a href="/" class="back-link">← Back to Members</a>
+            <h1 class="member-title"><%= member.name %></h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="member-detail">
+            <div class="member-detail-card">
+                <div class="member-detail-image">
+                    <img src="/images/<%= member.image %>" alt="<%= member.name %>">
+                </div>
+                <div class="member-detail-info">
+                    <h2><%= member.name %></h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Birthday</span>
+                            <span class="info-value"><%= member.birthday %></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Zodiac</span>
+                            <span class="info-value"><%= member.zodiac %></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Race</span>
+                            <span class="info-value"><%= member.race %></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.facebook.com/hepihepivn/" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/hepihepi.vn" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://youtube.com/@hepihepivn" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                <a href="https://www.tiktok.com/@hepihepivn" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+            </div>
+            <p>&copy; 2026 HepiHepi Fansite. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/theme.js"></script>
+</body>
+</html>

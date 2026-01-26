@@ -1,0 +1,5 @@
+services:
+  hepihepi:
+    build: ./src
+    ports:
+      - 5005:5005
