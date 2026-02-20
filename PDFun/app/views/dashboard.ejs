@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDFun - Dashboard</title>
+    <link rel="stylesheet" href="/dashboard.css">
+</head>
+<body>
+    <div class="header">
+        <div class="icon">📄 → 📕</div>
+        <h1>PDFun</h1>
+        <p>Transform your HTML code into professional PDF documents instantly - Make PDFs fun again!</p>
+    </div>
+
+    <div class="container">
+        <div class="converter-section">
+            <h2 class="section-title">
+                <span>🎨</span>
+                <span>Convert HTML to PDF</span>
+            </h2>
+            <p class="section-subtitle">Paste your HTML code below and click "Convert to PDF" to generate your document</p>
+            
+            <form action="/pdf" method="post" enctype="application/x-www-form-urlencoded" target="_blank">
+                <div class="textarea-wrapper">
+                    <label class="textarea-label" for="data">Your HTML Code:</label>
+                    <textarea name="data" id="data" rows="15" placeholder="Paste your HTML code here..."><h1>Hello world</h1>
+<h2>Hello world</h2>
+<h3>Hello world</h3>
+<h4>Hello world</h4>
+<style>* {color: red;}</style></textarea>
+                </div>
+                
+                <div class="button-group">
+                    <input type="submit" value="🚀 Convert to PDF">
+                </div>
+            </form>
+
+            <div class="tips">
+                <div class="tips-title">💡 Pro Tips:</div>
+                <ul>
+                    <li>You can include CSS styles within <code>&lt;style&gt;</code> tags</li>
+                    <li>JavaScript is supported for dynamic content</li>
+                    <li>Images and external resources can be embedded</li>
+                    <li>The PDF will open in a new tab automatically</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <div class="info-title">✨ Supported Features</div>
+            <ul class="info-list">
+                <li>Full HTML5 and CSS3 support</li>
+                <li>Responsive layouts and flexbox</li>
+                <li>Custom fonts and colors</li>
+                <li>Tables, lists, and formatted text</li>
+                <li>A4 format with print backgrounds</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
